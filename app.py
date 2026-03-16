@@ -9,7 +9,7 @@ app = Flask(__name__)
 # App configuration
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///treasury.db'
 app.config['SECRET_KEY'] = 'change-this-to-something-random-later'
-app.config['INVITE_CODE'] = 'kdphi2026'  # share this privately with officers
+app.config['INVITE_CODE'] = 'MTSND'  # share this privately with officers
 
 # Initialize extensions
 db = SQLAlchemy(app)
