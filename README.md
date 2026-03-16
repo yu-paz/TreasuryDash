@@ -29,7 +29,7 @@ For production, set these as environment variables:
 | `INVITE_CODE` | Code required to register a new account |
 
 ## Project Structure
-
+```
 ├── app.py              # Flask routes and database models
 ├── requirements.txt    # Python dependencies
 ├── render.yaml         # Render deployment configuration
@@ -40,3 +40,4 @@ For production, set these as environment variables:
     ├── edit.html       # Edit transaction
     ├── login.html      # Login page
     └── register.html   # Registration page
+```
