@@ -3,11 +3,12 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required, current_user
 from flask_bcrypt import Bcrypt
 from datetime import datetime
+import os
 
 app = Flask(__name__)
 
 # App configuration
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///treasury.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'sqlite:///treasury.db')
 app.config['SECRET_KEY'] = 'change-this-to-something-random-later'
 app.config['INVITE_CODE'] = 'MTSND'  # share this privately with officers
 
